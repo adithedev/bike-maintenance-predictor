@@ -3,6 +3,16 @@ from fastapi.middleware.cors import CORSMiddleware
 import psycopg2
 import pandas as pd
 import numpy as np
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load environment variables from .env file
+
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 app = FastAPI()
 
@@ -14,13 +24,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# PostgreSQL connection details
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "bike_share"
-DB_USER = "postgres"
-DB_PASSWORD = "adithebatman711"
 
 @app.get("/")
 def read_root():
