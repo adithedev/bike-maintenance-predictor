@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.env
+.venv/
+venv/
+env/
+*.env
+
+# Node.js
+node_modules/
+build/
+
+# Jupyter
+.ipynb_checkpoints/

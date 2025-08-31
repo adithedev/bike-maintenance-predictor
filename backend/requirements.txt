@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+psycopg2-binary
+pandas
+python-dotenv
+xgboost
+scikit-learn
