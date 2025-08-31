@@ -36,7 +36,7 @@ Trains and evaluates ML models to predict bike maintenance needs.
 
 🚀 Future Scope
 
-Real-time prediction with a Flask/Django API.
+Real-time prediction with a FastAPI
 
 Integration into a bike-sharing dashboard.
 
